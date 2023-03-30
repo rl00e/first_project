@@ -1,0 +1,664 @@
+
+
+
+* {
+padding: 0%;
+margin: 0%;
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-moz-box-sizing: border-box;
+list-style: none ;
+text-decoration: none ;
+font-family: 'baloo paaji' , cursive;
+transition: all 0.2s ease-in-out;
+
+}
+
+body{
+    margin: 0;
+    /* font family: " open sans ", sans-serif; */
+    font-size: 1rem ;
+    font-weight: 400;
+    line-height: 1.5 ;
+    color: #212529;  
+    text-align: left; 
+    background-color: #fff;
+    overflow-x: hidden;
+    /* font-family: 'baloo paaji' , cursive; */ 
+}  
+
+/* ============== start screen responsive  =============*/ 
+.container {
+    margin: 0 auto;
+    padding: 0 40px; 
+}
+   
+/* big */ 
+@media (min-width : 1200px ){
+    .container {
+        width: 1170px;
+    }
+}
+/*medium */ 
+@media (min-width : 882px ){
+    .container {
+        width: 970px;
+    }
+}
+/* small */ 
+@media (min-width : 768px ){
+    .container {
+        width: 750px;
+    }
+}
+
+/* ============== end  screen responsive  =============*/ 
+
+/* ============== start nav bar   =============*/ 
+
+
+.nav-bar {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 100000;
+
+}
+  
+.nav-bar .container {
+       display: flex ;
+       justify-content: space-between;
+       border-bottom: solid 1px black;
+       height: 12vh;
+       align-items: center ;
+     
+ }    
+
+
+.nav-bar .container .links ul {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-direction:row-reverse ;
+
+}
+.nav-bar .container .logo a{
+      font-size: 30px;
+      font-weight: bold;
+      color: #0d0645;
+    }
+.nav-bar .container .logo a:hover{
+ color: deepskyblue;
+
+
+}
+    .nav-bar .container .links ul li a {
+        font-weight: bold;
+        color: #330808;
+    }
+
+    .nav-bar .container .links ul li a:hover{
+        color:coral;
+    }
+
+.nav-bar .container .links ul li .home {
+        border-radius: 30px;
+        display: block ;
+        border: solid 3px #534688; 
+        padding: 10px 20px;
+        background: #534688;
+        color: white;
+
+
+
+    }
+    .nav-bar .container .links ul li .home:hover{
+
+        background-color: #fff;
+        color: #534688;
+    }
+
+      
+/* big */ 
+@media (max-width: 1200px ){
+   
+}
+/*medium */ 
+@media (max-width : 882px ){
+    
+}
+/* small */ 
+@media (max-width : 768px ){
+    .nav-bar .container .links {
+        display: none;
+    } 
+}
+
+
+/* ============== end  nav bar   =============*/ 
+
+
+
+
+/* ============== start landenig page   =============*/
+
+.landing-page{
+background-color: #a0bbd6;
+background-size:cover ;
+background-position: center;
+background-repeat:no-repeat ;
+padding: 10px;
+}
+
+.landing-page .backgound{
+    position:absolute ;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(to top, #fff 0%, rgpa(105,90,166,0.33) 99%, rgpa(105, 90, 166, 0.5) 100% ) ;
+
+}
+
+.landing-page .container{
+    width: fit-content;
+height: 100vh;
+display: flex ;
+justify-content: center;
+flex-direction: column;
+justify-content: center;
+z-index: 10000;
+position: relative;
+
+}
+
+.landing-page .container h1{
+    font-size: 55px;
+    color: #444;
+
+}
+
+.landing-page .container .my-name {
+color: #212529e6;
+
+
+}
+.landing-page .container p{
+width: 100%;  
+font-size: 20px ;
+letter-spacing: 6px;
+color: #111;
+opacity: 0.8;
+margin-bottom: 20px;
+border-radius: 20px;
+
+
+
+}
+
+.landing-page .container button{
+    width: 190px;
+    border: solid 3px #534688;
+    border-radius: 20px; 
+    padding: 10px 20px;
+    background: #534688;
+    color: white; 
+    cursor: pointer;
+}
+.landing-page .container button:hover{
+background-color: #fff;
+color: #534688;
+
+
+}
+
+     
+/* big */ 
+@media (max-width: 1200px ){
+   
+}
+/*medium */ 
+@media (max-width : 882px ){
+    
+}
+/* small */ 
+@media (max-width : 768px ){
+    .landing-page .container{
+        text-align: center;
+        align-items: center;
+    }
+    .landing-page .container h1{
+        font-size: 45px;
+    }
+    
+    }
+
+/* ============== end landenig page   =============*/
+ 
+/* ======= start about ========*/
+
+.about .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12rem;
+    
+
+}
+.about .container .img-container{
+    width: 30px;
+}
+
+.about .container .img-container img{
+    width: 400%;
+}
+
+.about .container .content h3{
+    font-size: 15px;
+    color: #999;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+
+}
+
+.about .container .content h2{
+    font-size: 32px;
+    color: #695aa6;
+    margin-bottom: 1rem;
+
+
+}
+
+.about .container .content p{
+    font-size: 15px;
+    color: #999;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+
+}
+    
+.about .container .content button{
+    width: 190px;
+    border: solid 3px #534688;
+    border-radius: 20px; 
+    padding: 10px 20px;
+    background: #534688;
+    color: white; 
+    cursor: pointer
+}
+
+
+.about .container .content button:hover{
+    background-color: #fff;
+    color: #534688;
+        
+}
+
+     
+/* big */ 
+@media (max-width: 1200px ){
+   
+}
+/*medium */ 
+@media (max-width : 882px ){
+    
+}
+/* small */ 
+@media (max-width : 768px ){
+    .about .container{
+       display: grid;
+       grid-template-columns: none;
+       grid-template-rows: 1fr 1fr;
+       justify-content: center;
+    }
+    
+    }
+
+/* ======= end about ========*/ 
+
+/* ======== start portfolio  ======== */
+.portfolio .container{
+    text-align: center;
+}
+
+.portfolio .container h3{
+    font-size: 32px;
+    font-family: 'baloo paaji' cursive;
+    color: #695aa6;
+}
+ 
+.portfolio .container p{
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: 3rem;
+}
+.portfolio .container .box-container{
+    display: flex;
+    flex: wrap;
+    gap: 2rem;
+    justify-content: center;
+    
+}
+
+.portfolio .container .box-container .box img{
+    width: 100%;
+    height: 100%;
+
+}
+/*  العنصر الاب   */
+.portfolio .container .box-container .parnet-box{
+    position: relative;
+    width: 30%;
+}
+
+/*العنصر الجديد */
+
+.portfolio .container .box-container .box-new{
+     opacity: 0;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: #c1dfedc1;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     pointer-events:  none;
+
+    
+}
+
+.portfolio .container .box-container .box-new h2{
+    font-family: 25px;
+    font-weight: 500;
+    color: #534688;
+    margin-bottom: 0.5rem;
+    font-family:'baloo paaji' cursive ;
+
+}
+.portfolio .container .box-container .box-new a{
+    color: #000;
+   
+
+
+}
+.portfolio .container .box-container .parnet-box:hover .box-new{
+    opacity: 1;
+    pointer-events:  auto;
+
+
+}
+     
+/* big */ 
+@media (max-width: 1200px ){
+   
+}
+/*medium */ 
+@media (max-width : 882px ){
+    
+}
+/* small */ 
+@media (max-width : 768px ){
+.portfolio .container .box-container{
+    flex-direction: column;
+
+}
+.portfolio .container .box-container .parnet-box{
+    width: 100%;
+}
+.portfolio .container .box-container .box-new{
+    opacity: 1;
+    background-color: #444444a9;
+}
+.portfolio .container .box-container .box-new h2{
+    font-weight: bold;
+}
+   
+.portfolio .container .box-container .box-new a{
+    font-weight: 500;
+} 
+
+   }
+    
+    
+/* ======== end portfolio  ======== */
+
+
+
+/* ======== start Blue section  ======== */
+.Blue-section{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #695aa6;
+    
+}
+
+
+.Blue-section .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Blue-section .container .left p{
+    font-size:20px;
+    color: #fff;
+
+
+}
+.Blue-section .container .left .text-first{
+   font-family: 'baloo paaji' , cursive;
+
+}
+
+.Blue-section .container .right button{
+    width: 150px;
+    border: solid 3px #fff;
+    border-radius: 20px;
+    padding: 10px 20px ;
+    background: #fff;
+    color: #534688;
+    font-size: 20px;
+    cursor: pointer;
+}
+       
+/* big */ 
+@media (max-width: 1200px ){
+   
+}
+/*medium */ 
+@media (max-width : 882px ){
+    
+}
+/* small */ 
+@media (max-width : 768px ){
+.Blue-section .container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+
+}
+.testi-section .container .parent-item{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.testi-section .container .parent-item .first{
+    width: 100% !important;
+}
+      
+.testi-section .container .parent-item .first .img-container{
+    left: 50% !important;
+    bottom: -40px;
+    transform: translate(-50%);
+}
+
+   } 
+/* ======== start Blue section  ======== */
+
+
+
+/* ======== start Testimolnial  ======== */
+.testi-section .container{
+    text-align: center;
+    margin-bottom: 5rem ;
+
+}
+.testi-section .container h5{
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    opacity: 0.6;
+    letter-spacing: 0.6px;
+}
+.testi-section .container h3{
+    font-size: 32px;
+    font-weight: 500;
+    font-family: 'baloo paaji' , cursive;
+    color: #695aa6;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    
+}
+.testi-section .container .parent-item{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+
+}
+
+.testi-section .container .parent-item .first{
+    border: solid 1px #534688;
+    padding: 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: relative;
+    padding-left: 55px;
+
+}
+.testi-section .container .parent-item .first .text{
+    text-align: start;
+}
+
+
+.testi-section .container .parent-item .first .img-container{
+    width: 70px;
+    position:absolute;
+    left: -35px;
+    
+
+}
+.testi-section .container .parent-item .first .img-container img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+/* ======== End Testimolnial  ======== */
+
+
+/* ======== start contact  ======== */
+
+.contact .container{
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    text-align: center;
+
+}
+
+.contact .container h5{
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    opacity: 0.6;
+    letter-spacing: 0.6px;
+
+}
+.contact .container h3{
+   font: 32px;
+   font-weight: 500;
+   font-family: 'baloo paajo',cursive;
+   color: #695aa6;
+   margin-bottom: 3rem;
+   font-weight: bold;
+
+}
+
+.contact .container form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.contact .container form input{
+    padding: 15px;
+    border: solid 1px #c93b3b2e;
+}
+
+.contact .container form textarea{
+    padding: 10px;
+    border: 1px solid rgb(213, 207, 207);
+    resize: vertical;
+    max-height: 300px !important;
+    min-height: 100px;
+
+}
+.contact .container form button{
+    width: 130px;
+    border: solid 3px #534688;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #534688;
+    color: white;
+    cursor: pointer;
+}
+.contact .container form button:hover{
+    background-color: #fff;
+    color: #534688;
+}
+
+      
+/* big */ 
+@media (max-width: 1200px ){
+   
+}
+/*medium */ 
+@media (max-width : 882px ){
+    
+}
+/* small */ 
+@media (max-width : 768px ){
+      .contact .container form{
+        padding: 0;
+        align-items: center;
+      }
+.contact .container form input{
+    width: 100%;
+    
+}
+   
+.contact .container form textarea{
+    width: 100%;
+}
+
+   } 
+
+
+
+/* ======== end contact  ======== */
